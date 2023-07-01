@@ -7,7 +7,6 @@ def login():
     if request.method == 'POST':
         username = request.form['username']
         password = request.form['password']
-        # Handle login logic here
         return f'Logged in as {username}'
     return render_template('login.html')
 
